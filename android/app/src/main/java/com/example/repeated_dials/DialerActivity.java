@@ -144,7 +144,7 @@ public class DialerActivity extends FlutterActivity {
                       Toast.makeText(DialerActivity.this, "Started getAndroidphone!!! ", Toast.LENGTH_SHORT).show();
                       
                      
-                      /*String*/ //phonestate = makeCall(parameters);
+                      String phonestate = makeCall(parameters);
                       Toast.makeText(DialerActivity.this, "Started theMethodChannel to makeCall", Toast.LENGTH_SHORT).show();
                       
                       if (phonestate != null) {
@@ -206,11 +206,12 @@ public class DialerActivity extends FlutterActivity {
                         callNumber="";
                     }
                     Toast.makeText(DialerActivity.this, "着信中\nCALL_STATE_RINGING: " + callNumber, Toast.LENGTH_SHORT).show();
+                    phonestate  = "RINGING";
                     callinfo.setText("着信："+callNumber);
                     break;
                 case TelephonyManager.CALL_STATE_OFFHOOK:   //通話
                     Toast.makeText(DialerActivity.this, "通話中\nCALL_STATE_OFFHOOK", Toast.LENGTH_SHORT).show();
-                     phonestate  = "通話中\nCALL_STATE_OFFHOOK";
+                    phonestate  = "通話中\nCALL_STATE_OFFHOOK";
                     break;
             }
            
