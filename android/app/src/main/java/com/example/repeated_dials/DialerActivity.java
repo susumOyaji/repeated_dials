@@ -1,4 +1,4 @@
-package com.example.nativecode;
+package com.example.repeated_dials;
 
 import android.os.Bundle;
 import io.flutter.plugins.GeneratedPluginRegistrant;
@@ -39,7 +39,7 @@ import android.app.Activity;
 import android.widget.Toast;
 import android.widget.TextView;
 import android.view.View;
-import com.example.nativecode.R;
+import com.example.repeated_dials.R;
 import android.os.BatteryManager;
 import android.os.Build.VERSION;
 import android.os.Build.VERSION_CODES;

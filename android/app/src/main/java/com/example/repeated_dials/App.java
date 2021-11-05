@@ -1,4 +1,4 @@
-package com.example.nativecode;
+package com.example.repeated_dials;
 
 import android.app.Application;
 import android.os.Bundle;

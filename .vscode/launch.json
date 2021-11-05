@@ -10,6 +10,26 @@
             "type": "dart"
         },
         {
+            "name": "Flutter & Android Build & Launch",
+            "type": "android",
+            "request": "launch",
+            "appSrcRoot": "${workspaceRoot}/android/app/src/main",
+            "apkFile": "${workspaceRoot}/build/app/outputs/flutter-apk/debug/app-debug.apk",
+            "preLaunchTask": "run gradle",
+            "autoStartADB": true,
+            "adbSocket": "localhost:5037",
+            //...
+            
+        },
+        {
+            "type": "android",
+            "request": "launch",
+            "name": "Android Launch",
+            "appSrcRoot": "${workspaceRoot}/android/app/src/main",
+            "apkFile": "${workspaceRoot}/build/app/outputs/flutter-apk/app-debug.apk",
+            "adbPort": 5037
+        },   
+        {
             "name": "repeated_dials (profile mode)",
             "request": "launch",
             "type": "dart",
